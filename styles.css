@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eaff, #cfdcff);
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-get-started {
+    background-color: #4a6cf7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-get-started:hover {
+    background-color: #3b5ae6;
+}
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    padding: 50px 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.content {
+    max-width: 50%;
+    text-align: left; 
+    padding-right: 20px; 
+}
+
+.content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-more-info {
+    background-color: #4a6cf7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-more-info:hover {
+    background-color: #3b5ae6;
+}
+
+.illustration {
+    max-width: 50%; 
+    text-align: right; 
+}
+
+.illustration img {
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .btn-get-started {
+        display: none;
+    }
+
+    .landing-page {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .illustration {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .illustration img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.8em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .btn-more-info {
+        padding: 8px 16px;
+    }
+}
